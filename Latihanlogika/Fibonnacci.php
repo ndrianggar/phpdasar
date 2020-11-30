@@ -1,0 +1,22 @@
+<?php 
+
+// buat variable 
+
+$angka_sblm=0;
+$angka_skrg=1;
+
+// ini mencetak variable angka awal hasilnya =>  mencetak 0 1
+echo "$angka_sblm $angka_skrg"; 
+
+// mengulang nilai yang dicetak
+for ($i=0; $i<5; $i++)
+{
+    // hitung angka yang akan ditampilkan
+    $output = $angka_sblm + $angka_skrg;
+    echo "$output"; // cetak 1
+
+    $angka_sblm = $angka_skrg; // cetak 2
+    $angka_skrg = $output; // cetak 3
+}
+
+?>
