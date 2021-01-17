@@ -1,14 +1,20 @@
 <?php
+for ($i=1; $i <= 50 ; $i++) {     // for 1, adalah bilangan yang akan di cek
 
-for($i=1; $i<=50; $i++){
+    $t = 0; 
 
-    $t= 0;
+        for ($j=1; $j <= $i ; $j++) {  // for 2, bilangan pembagi
 
-    for($l=1; $l<=$i; $l++){
-        $t++;
+            if ($i % $j == 0) {
+                $t++;
+            }
+          
+        }
+
+    if ($t == 2) {   // syarat atau kondisi bilangan prima
+        echo "".$i.",";
     }
-    if ($l==2){
-        echo "tse";
-    }
-
 }
+
+
+ ?>
